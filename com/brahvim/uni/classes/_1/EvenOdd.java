@@ -15,8 +15,6 @@ public class EvenOdd {
 			);
 
 		}
-		catch (final Exception e) {
-		}
 	}
 
 }

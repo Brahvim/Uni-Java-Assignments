@@ -15,11 +15,6 @@ public class ConvertTemperature {
 
 			);
 
-		} catch (final Exception e) {
-
-			System.out.println("There was an error.");
-			// e.printStackTrace();
-
 		}
 	}
 

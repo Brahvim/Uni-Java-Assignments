@@ -20,11 +20,6 @@ public class TriArea {
 			final double area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
 			System.out.printf("Area is `%f`.\n", area);
 
-		} catch (final Exception e) {
-
-			System.out.println("There was an error.");
-			// e.printStackTrace();
-
 		}
 	}
 
