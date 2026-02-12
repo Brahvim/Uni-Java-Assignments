@@ -2,6 +2,7 @@ package com.brahvim.uni.classes._1;
 
 public class OperatorHell {
 
+	@SuppressWarnings({ "dead", "unused" })
 	public static void main(final String... p_args) {
 		final int x = 3;
 		final int y = 5;
@@ -15,7 +16,7 @@ public class OperatorHell {
 		System.out.println(
 
 				(x * y + 10 / 2 % 3 & 7) == 5
-				&& x >= z
+						&& x >= z
 
 		);
 	}
