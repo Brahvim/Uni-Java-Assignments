@@ -1,9 +1,9 @@
-package com.brahvim.uni.classes;
+package com.brahvim.uni.classes._1;
 import java.util.Scanner;
 
 public class EvenOdd {
 
-	public static void main(String... p_args) {
+	public static void main(final String... p_args) {
 		try (final Scanner sc = new Scanner(System.in)) {
 
 			System.out.print("Enter a number: ");

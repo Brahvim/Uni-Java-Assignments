@@ -1,4 +1,4 @@
-package com.brahvim.uni.classes;
+package com.brahvim.uni.classes._1;
 
 import java.util.Scanner;
 

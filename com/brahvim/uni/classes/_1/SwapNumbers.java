@@ -1,10 +1,10 @@
-package com.brahvim.uni.classes;
+package com.brahvim.uni.classes._1;
 
 import java.util.Scanner;
 
 public class SwapNumbers {
 
-	public static void main(String... p_args) {
+	public static void main(final String... p_args) {
 		try (Scanner sc = new Scanner(System.in)) {
 
 			System.out.print("Enter a number: ");
