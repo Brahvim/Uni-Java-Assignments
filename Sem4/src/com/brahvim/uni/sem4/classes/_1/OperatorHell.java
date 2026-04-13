@@ -2,7 +2,7 @@ package com.brahvim.uni.sem4.classes._1;
 
 public class OperatorHell {
 
-	@SuppressWarnings({ "dead", "unused" })
+	@SuppressWarnings({ "all", "dead", "unused" })
 	public static void main(final String... p_args) {
 		final int x = 3;
 		final int y = 5;

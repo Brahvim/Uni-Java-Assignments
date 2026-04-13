@@ -1,4 +1,8 @@
 {
-    "java.compile.nullAnalysis.mode": "automatic",
-    "java.configuration.updateBuildConfiguration": "automatic"
+	"java.project.sourcePaths": [
+		"Sem4/com/*",
+		"Sem4-Spring",
+	],
+	"java.compile.nullAnalysis.mode": "automatic",
+	"java.configuration.updateBuildConfiguration": "automatic",
 }
