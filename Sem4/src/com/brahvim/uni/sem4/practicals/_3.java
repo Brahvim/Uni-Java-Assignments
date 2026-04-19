@@ -146,6 +146,14 @@ public class _3 {
 			this.boxes.add(p_box);
 		}
 
+		public void add(final Box... p_boxes) {
+			for (final Box b : p_boxes) {
+
+				this.boxes.add(b);
+
+			}
+		}
+
 		public void remove(final Box p_box) {
 			this.boxes.remove(p_box);
 		}
@@ -186,20 +194,46 @@ public class _3 {
 			return sum;
 		}
 
+		public float findTotalQueries() {
+			float sum = 0;
+
+			for (final Box b : this.boxes) {
+
+				sum += b.getQueryCount();
+
+			}
+
+			return sum;
+		}
+
 	}
 
 	public static void main(final String[] p_args) {
 		final Box b1 = new Box(1, 2, 3);
 
-		b1.addOnDimensionsChangedListener(b -> {
-
-			System.out.println("Box 1's dimensions were changed.");
-
-		});
-
-		b1.setHeight(8);
-
+		System.out.println("Creating Box 2...");
 		final Box b2 = new Box(4, 5, 6);
+		b2.addOnDimensionsChangedListener(b -> System.out.println("Box 2's dimensions changed!"));
+		b2.setWidth(44);
+		b2.setHeight(256);
+		System.out.println("Box 2 ready!");
+
+		final BoxManager man = new BoxManager();
+		man.add(b1, b2);
+
+		System.out.printf(
+
+				"Total volume of all boxes: `%.1f`.\n",
+				man.findTotalVolume()
+
+		);
+
+		System.out.printf(
+
+				"Total number of queries: `%d`.\n",
+				man.findTotalQueries()
+
+		);
 	}
 
 }
